@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/D_Blue">
+
+    <EditText
+        android:id="@+id/edNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Nome"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/Purple"
+        android:textSize="25dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/edCpf"
+        android:layout_below="@+id/edNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Cpf"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/Purple"
+        android:textSize="25dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/edTelefone"
+        android:layout_below="@+id/edCpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Telefone"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/Purple"
+        android:textSize="25dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edTelefone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/Purple"
+        android:onClick="salvar"
+        android:text="Salvar"
+        android:textSize="27sp" />
+
+
+</RelativeLayout>
